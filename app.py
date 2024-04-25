@@ -54,8 +54,8 @@ upload_interface = gr.Interface(
     fn = recommend_music,
     inputs = gr.Image(type='pil',label = 'Image',sources=["upload","clipboard"]),
     outputs=[gr.Textbox(label='Emotion'), gr.HTML(label='Recommended Songs')],
-    title = 'VibeSync',
-    description = 'Facial Emotion Based Music Recommendation System'
+    title = 'VibeSync - Facial Emotion Based Music Recommendation System',
+    description = "Here you can upload your image and we will identify your mood and recommend songs based on that"
 )
 
 upload_interface.launch(debug = True)
