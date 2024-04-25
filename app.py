@@ -10,7 +10,7 @@ from tensorflow.keras.preprocessing import image
 from PIL import Image
 import cv2
 
-model = keras.saving.load_model('./Model/Final_ResNet50_Model.keras')
+model = keras.saving.load_model('./Final_ResNet50_Model.keras')
 songs = pd.read_csv('./Data/songs_mood.csv')
 
 emotion_labels = {'angry': 0, 'fear': 1, 'happy': 2, 'neutral': 3, 'sad': 4}
